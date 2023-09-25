@@ -384,4 +384,5 @@ From this data I learned that sedans and SUVs were consistantly involved in more
 
 ## **Act:**
 
+
 The final step of the Data Analysis Process is Act. This the step where you apply insight and make decisions based on the data you have analyzed. I learned that from 2018 through 2021 which states had the highest and lowest amount of accidents, what months had the highest and lowest number of accidents, percentage of death rates that occurred during this time, if weather conditions played a role in the amount of accidents, if speed had any factor in amount of accidents and what type of vehicles were involved the most and the least. 
