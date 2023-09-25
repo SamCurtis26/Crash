@@ -377,6 +377,7 @@ grid.arrange(plot_bt1,plot_bt2,plot_bt3,plot_bt4)
 ``` 
 ![Body Type Involved each year](/crash.vis/Body%20Type.png)
 
+
 From this data I learned that sedans and SUVs were consistantly involved in more accidents than any other type of vehicle during this time.
 
 ## **Act:**
