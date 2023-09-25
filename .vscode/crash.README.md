@@ -127,7 +127,8 @@ plot_usmap(data = df, regions = 'states', values = 'values', color = "black") +
   theme(legend.position = "right")
   labs(title = "Accidents 2018")
 ```
-![Accident map of US](/crash.vis/map%202018.png)
+![Accident map of US](/crash.vis/map2018.png)
+
 According to this survey, in the 4 years, there were a combined total of 140,679 accidents in the US, with California, Texas and Florida having the highest percentages and Rhode Island, Alaska and Vermont being the lowest.
 
 The next question was the death per month ratio in each year, so I had to aggregate the totals for each month individually, create a new datata set and plot the results on individual plots.
@@ -194,7 +195,7 @@ plot4 <- ggplot(df_ts, mapping = aes(x = Month, y = d2021,))+
  
 grid.arrange(plot1,plot2,plot3,plot4)
 ``` 
-![Multiplot of Deaths per year](/crash.vis/4%20death%20total.png)
+![Multiplot of Deaths per year](/crash.vis/4DeathTotal.png)
 
 These findings showed the months with the highest death rate for accidents were between June, July and August, while February and March were the lowest. 
 
@@ -241,7 +242,7 @@ plot12 <- data.frame(Year,Percent)
 ggplot()+
   geom_col(data = plot12,mapping = aes(x=Year,y=Percent,fill = Percent))
 ```   
-![Death percentages per year](/crash.vis/Death%20Percentages.png)
+![Death percentages per year](/crash.vis/DeathPercentages.png)
 The percentages of deaths were fairly consistant over the 4 years and accounted for less than 1% of total accidents.
 
  Then I wanted to know if weather and driving conditions played a major factor in the number of accidents. And if so, what were the most dangerous conditions. So I needed to calculate the total accidents by different road conditions, arrange them in a dataset and compare them.
@@ -273,7 +274,8 @@ ggplot(Con2018,aes(x=Condition,y=Accidents))+
       shape = 21,
       size = 4)
 ```
-![Road Condition Ratio](/crash.vis/Condition%20Percentages.png)
+![Road Condition Ratio](/crash.vis/ConditionPercentages.png)
+
 From the graph shown, you can see that a majority of the accidents happened in dry conditions at almost 100,000 total. The next closest was in wet conditions at just over 17,000.
 
 Next, I wanted to know if higher speed limits were a major factor of accidents and which zones had the highest, and which were the lowest. I needed to calculate each year totals for each speed limit, which were compiled in groups at 75, 65, 55, 45, 35, 25 and 15 mph.
@@ -375,7 +377,7 @@ plot_bt4 <- ggplot(df_bt4, aes(fill = BODY_TYPE,x=BODY_TYPE,y=n,))+
 
 grid.arrange(plot_bt1,plot_bt2,plot_bt3,plot_bt4)
 ``` 
-![Body Type Involved each year](/crash.vis/Body%20Type.png)
+![Body Type Involved each year](/crash.vis/BodyType.png)
 
 
 From this data I learned that sedans and SUVs were consistantly involved in more accidents than any other type of vehicle during this time.
