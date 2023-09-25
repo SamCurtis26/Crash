@@ -127,7 +127,7 @@ plot_usmap(data = df, regions = 'states', values = 'values', color = "black") +
   theme(legend.position = "right")
   labs(title = "Accidents 2018")
 ```
-![Accident map of US](/crash.vis/map2018.png)
+![Accident map of US](/crash.vis/map2018.2021.png)
 
 According to this survey, in the 4 years, there were a combined total of 140,679 accidents in the US, with California, Texas and Florida having the highest percentages and Rhode Island, Alaska and Vermont being the lowest.
 
